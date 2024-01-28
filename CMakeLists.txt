@@ -11,7 +11,7 @@ set(OpenGL_GL_PREFERENCE GLVND)
 
 add_compile_options(-Wall -Wextra -Wpedantic -Wno-unused-parameter)
 
-file(GLOB src_files CONFIGURE_DEPENDS "*.cpp")
+file(GLOB src_files CONFIGURE_DEPENDS "src/*.cpp")
 
 add_executable(${CMAKE_PROJECT_NAME} ${src_files})
 
