@@ -1,0 +1,62 @@
+grass:
+	organic 1
+	fiber 10
+	flammable 10
+
+rock:
+	sharp 10
+	hard 10
+
+stick:
+	pointy 10
+	handle 10
+	flammable 50
+
+clay:
+	organic 5
+	water 50
+	formable 100
+
+unfired clay pot:
+	container: 50
+
+clay pot:
+	container: 60
+	liquid container: 50
+
+basket:
+	container: 60
+
+axe:
+	sharp #
+	wood cutting #
+
+
+
+// Crafting
+tool:
+	property: min amount, min score, sum score
+
+unfired clay pot:
+	clay: 10, 100, 100
+
+clay pot:
+	unfired clay pot: 1, 100, 100
+
+basket:
+	fiber: 100, 0, 0
+
+axe:
+	sharp 1, 0, 0
+	handle 1, 0, 0
+
+
+
+{
+	age "12"
+	item {
+		data "01 00 00 00 02 00 00 00 03 00 00 00 04 00 00 00"
+		type "stick"
+	}
+	name ""
+}
